@@ -132,9 +132,14 @@ export let GET = function (router = '', options = new ResftulOptions()) {
                 }
                 requestUrl = requestUrl.replace(/\{[^\)]*\}/g, params ? params.toString() : '');
             }
-            const res = this.makeHttpRequest('GET', requestUrl, requestOptions, methodName);
-            methods.apply(this, [params]);
-            return res;
+            try {
+                const res = this.makeHttpRequest('GET', requestUrl, requestOptions, methodName);
+                methods.apply(this, [params]);
+                return res;
+            }
+            catch (error) {
+                throw new Error("Target service does not inherit the RESTful Helper class");
+            }
         };
     };
 };
@@ -171,9 +176,14 @@ export let POST = function (router = '', options = new ResftulOptions()) {
             if (this.getRestfulRecources() === RestfulClientState.CUSTOMED_RESOURCE) {
                 requestUrl = this.rootUrl + (router !== null && router !== void 0 ? router : '');
             }
-            const res = this.makeHttpRequest('POST', requestUrl, requestOptions, methodName);
-            methods.apply(this, body);
-            return res;
+            try {
+                const res = this.makeHttpRequest('POST', requestUrl, requestOptions, methodName);
+                methods.apply(this, body);
+                return res;
+            }
+            catch (error) {
+                throw new Error("Target service does not inherit the RESTful Helper class");
+            }
         };
     };
 };
@@ -210,9 +220,14 @@ export let PUT = function (router = '', options = new ResftulOptions()) {
                 }
                 requestUrl = requestUrl.replace(/\{[^\)]*\}/g, params ? params.toString() : '');
             }
-            const res = this.makeHttpRequest('PUT', requestUrl, requestOptions, methodName);
-            methods.apply(this, [params, body]);
-            return res;
+            try {
+                const res = this.makeHttpRequest('PUT', requestUrl, requestOptions, methodName);
+                methods.apply(this, [params, body]);
+                return res;
+            }
+            catch (error) {
+                throw new Error("Target service does not inherit the RESTful Helper class");
+            }
         };
     };
 };
@@ -248,9 +263,14 @@ export let DELETE = function (router = '', options = new ResftulOptions()) {
                 }
                 requestUrl = requestUrl.replace(/\{[^\)]*\}/g, params ? params.toString() : '');
             }
-            const res = this.makeHttpRequest('DELETE', requestUrl, requestOptions, methodName);
-            methods.apply(this, [params]);
-            return res;
+            try {
+                const res = this.makeHttpRequest('DELETE', requestUrl, requestOptions, methodName);
+                methods.apply(this, [params]);
+                return res;
+            }
+            catch (error) {
+                throw new Error("Target service does not inherit the RESTful Helper class");
+            }
         };
     };
 };

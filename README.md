@@ -58,7 +58,6 @@ export class RestfulHelper extends RestfulClient implements IRestfulClient {
 
 After the above helper is created, the global configuration of the network request is basically completed.
 
-you don’t want to create a helper, it happens that the UI framework you use is `ng-zorro`, and the background framework is `abp`, then` ZorroRestfulHelper` in ng-restful-ars is available out of the box for you. Just import it.
 
 2. Use the helper in your service. Extend the RestfulHelper and import the HTTP METHOD(POST PUT GET DELETE). And add them as a decorator of the request function. 
 
@@ -175,4 +174,11 @@ the interface `IRestfulClient` ss to constrain the helper created by the user. T
 | onHttpError(error: any, method: string, path: string, options: any): void; | Called when the server returns an error.                     |
 | onHttpRespond(res);                                          | Called when the server response.                             |
 | onDefaultSuccessNotice(res);                                 | When `showDefaultSuccessNotice` is set to true, the processing in the callback is executed. |
+
+#Projects compile
+tsc at root dir & index.js/index.d.ts manual modification
+
+
+
+
 

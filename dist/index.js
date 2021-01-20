@@ -1,9 +1,11 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function (o, m, k, k2) {
+    if (k2 === undefined)
+        k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function () { return m[k]; } });
+}) : (function (o, m, k, k2) {
+    if (k2 === undefined)
+        k2 = k;
     o[k2] = m[k];
 }));
 exports.__esModule = true;
@@ -24,3 +26,4 @@ __createBinding(exports, restful_client_1, "POST");
 __createBinding(exports, restful_client_1, "DELETE");
 var restful_options_1 = require("./dist/restful-options");
 __createBinding(exports, restful_options_1, "ResftulOptions");
+//# sourceMappingURL=index.js.map

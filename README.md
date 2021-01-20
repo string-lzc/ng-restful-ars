@@ -175,8 +175,6 @@ the interface `IRestfulClient` ss to constrain the helper created by the user. T
 | onHttpRespond(res);                                          | Called when the server response.                             |
 | onDefaultSuccessNotice(res);                                 | When `showDefaultSuccessNotice` is set to true, the processing in the callback is executed. |
 
-#Projects compile
-tsc at root dir & index.js/index.d.ts manual modification
 
 
 

@@ -1,1 +1,0 @@
-{"version":3,"file":"restful-options.js","sourceRoot":"","sources":["../../src/restful-options.ts"],"names":[],"mappings":"AACA,MAAM,OAAO,cAAc;IAA3B;QACE,gBAAW,GAAG,gCAAgC,CAAC;QAC/C,YAAO,GAAQ;YACb,iBAAiB,EAAE,SAAS;YAC5B,cAAc,EAAE,gCAAgC;SACjD,CAAC;QACF,6BAAwB,GAAG,KAAK,CAAC;IACnC,CAAC;CAAA"}

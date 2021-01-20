@@ -1,10 +1,11 @@
 {
   "name": "ng-restful-ars",
-  "version": "0.0.8",
+  "version": "0.1.1",
   "description": "A restful http request lib based on decorator of typescript in Angular.",
   "main": "index.d.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "tsc && tsc index.ts && npm publish"
   },
   "keywords": [
     "http",
